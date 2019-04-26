@@ -1,6 +1,5 @@
 <?php
 
-
 class Telegram {
   private static $jsonData;
 
