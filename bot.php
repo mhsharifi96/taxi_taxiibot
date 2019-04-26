@@ -2,6 +2,10 @@
 require_once("Telegram.php");
 require_once("Database.php");
 
+ini_set('display_startup_errors', 1);
+ini_set('display_errors', 1);
+error_reporting(-1);
+
 define("_TOKEN", "849660616:AAH6ZT73zIGDZI_opsITMfUUy14DezlejYo");
 define("_ADMIN", "mhs969");
 
