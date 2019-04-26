@@ -2,14 +2,14 @@
 require_once("Telegram.php");
 require_once("Database.php");
 
-define("_TOKEN", "<-BotToken->");
-define("_ADMIN", "<-AdminChatId->");
+define("_TOKEN", "849660616:AAH6ZT73zIGDZI_opsITMfUUy14DezlejYo");
+define("_ADMIN", "mhs969");
 
 global $config;
 $config['host'] = "127.0.0.1";
-$config['user'] = "<-Username->";
-$config['pass'] = "<-Password->";
-$config['name'] = "<-DatabaseName->";
+$config['user'] = "galenoos_bot";
+$config['pass'] = "mhsshb1252000!";
+$config['name'] = "galenoos_bot";
 $config['table'] = "user_data";
 
 $json = file_get_contents('php://input');
