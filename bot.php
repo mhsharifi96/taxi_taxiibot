@@ -7,7 +7,7 @@ ini_set('display_errors', 1);
 error_reporting(-1);
 
 define("_TOKEN", "849660616:AAH6ZT73zIGDZI_opsITMfUUy14DezlejYo");
-define("_ADMIN", "mhs969");
+define("_ADMIN", "197418176");
 
 global $config;
 $config['host'] = "127.0.0.1";
