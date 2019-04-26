@@ -9,6 +9,9 @@ error_reporting(-1);
 define("_TOKEN", "849660616:AAH6ZT73zIGDZI_opsITMfUUy14DezlejYo");
 define("_ADMIN", "197418176");
 
+$txt = "user id date";
+$myfile = file_put_contents('logs.txt', $txt.PHP_EOL , FILE_APPEND | LOCK_EX);
+
 global $config;
 $config['host'] = "localhost";
 $config['user'] = "galenoos_bot";
@@ -25,7 +28,7 @@ $chatId = $tg->getChatId();
 $message = $tg->getText();
 
 if ($message == "/start") {
-  $db->insertNewUser($chatId);
+  $db->insertNewUser($chatId);  
   $textMessage = "Hi Welcome !\n";
   $textMessage .= "Please send to me your message.";
   $tg->sendMessage($chatId, $textMessage);
