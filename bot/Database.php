@@ -23,6 +23,11 @@ class Database {
     $this->query($sql);
   }
 
+  public function insertUserState($chatId,$question_number){
+    $sql = " INSERT INTO user_log VALUES ('" . $chatId . "', '0')";
+    $this->query($sql);
+  }
+
   public function getUserCounter($chatId) {
     global $config;
     $result = $this->query("SELECT _countMsg FROM " . $config['table'] . " WHERE _chatId LIKE '" . $chatId . "'");

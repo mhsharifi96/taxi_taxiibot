@@ -1,0 +1,19 @@
+CREATE TABLE user_log (
+   id int NOT NULL PRIMARY KEY,
+  _chatId char(12)  NULL,
+  _state_question int(11)  NULL
+)
+
+CREATE TABLE user_request(
+    id int NOT NULL AUTO_INCREMENT,
+    _chatId char(12)  NULL,
+    _name varchar(300) NUll,
+    _title varchar(300) NUll,
+    _description varchar(300) NUll,
+    _city varchar(300) NUll,
+    _heartfelt varchar(300) NUll,
+    _contact varchar(500) NUll,
+    _username varchar(300) NUll,
+    _sent BIT DEFAULT 'FALSE'
+    PRIMARY KEY (id)
+)
